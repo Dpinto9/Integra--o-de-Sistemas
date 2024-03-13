@@ -14,13 +14,11 @@
       </div>
     
       <ul class="slides">
-        <!-- Aplicar template para as notícias destacadas -->
         <xsl:apply-templates select="noticia[@destaque='sim']"/>
       </ul>
     </div>
-    <!-- Seção principal para todas as notícias -->
+
     <main>
-      <!-- Aplicar template para todas as notícias -->
       <xsl:apply-templates select="noticia"/>
     </main>
   </xsl:template>
