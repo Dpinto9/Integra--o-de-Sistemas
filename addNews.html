@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Noticia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.png">
+
+    <!---css style-->
+    <link rel="stylesheet" href="CSS/styleNEW.css" />
+
+    
+</head>
+<body>
+    <header>
+        <img onclick="location.href = 'index.html';" style="cursor: pointer;"  src="assets/logo.png" width="120px" />
+    </header>
+    <main>
+        <section class="formsNews">
+            <form action="index.html" method="post" enctype="multipart/form-data">
+                <h2>Adicone uma Nova Notícia</h2>
+
+                <!-- <label for="id">ID:</label><br>
+                <input type="text" id="id" name="id"><br> -->
+                <label for="destaque">Destaque:</label><br>
+                <select id="destaque" name="destaque">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Nao</option>
+                </select><br>
+                
+                    <label for="titulo">Titulo:</label><br>
+                    <input type="text" id="titulo" name="titulo"><br>
+                    <label for="subtitulo">Subtitulo:</label><br>
+                    <input type="text" id="subtitulo" name="subtitulo"><br>
+                <div>
+                    <label for="autor">Autor:</label><br>
+                    <input type="text" id="autor" name="autor"><br>
+                </div>
+                <hr>
+
+                <div class="data">
+                    <div>
+                        <label for="dia">Dia:</label><br>
+                        <input type="text" id="dia" name="dia"><br>
+                    </div>
+                    <div>
+                        <label for="mes">Mes:</label><br>
+                        <input type="text" id="mes" name="mes"><br>
+                    </div>
+                    <div>
+                        <label for="ano">Ano:</label><br>
+                        <input type="text" id="ano" name="ano"><br>
+                    </div>
+                </div>
+                <hr>
+
+                <label for="categoria">Categoria:</label><br>
+                <select id="categoria" name="categoria">
+                    <option value="politica">Politica</option>
+                    <option value="economia">Economia</option>
+                    <option value="desporto">Desporto</option>
+                    <option value="entretenimento">Entretenimento</option>
+                    <option value="tecnologia">Tecnologia</option>
+                </select><br>
+                <label for="paragrafo">Paragrafo:</label><br>
+                <textarea id="paragrafo" name="paragrafo"></textarea><br>
+                <hr>
+                <div class="imgAdd">
+                    <p>Adicione uma imagem à Noticia:</p>
+                    <label for="imagem">Clique para adicionar imagem</label><br>
+                    <input type="file" id="imagem" name="imagem"><br>
+                </div>
+                <input type="submit" value="Submit" >
+
+            </form>
+          </section>
+
+    </main>
+</body>
+</html>

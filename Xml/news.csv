@@ -1,0 +1,11 @@
+id,destaque,titulo,subtitulo,autor,dia,mes,ano,categoria,imagem
+n1,sim,"COVID-19 Cases Decline Globally, But Concerns Remain","New data suggests a decrease in COVID-19 cases worldwide, but experts warn of potential resurgence.",Diogo Pinto,05,03,2024,Desporto,assets/corona.jpg
+n2,nao,"Stock Market Shows Signs of Volatility Amid Economic Uncertainty","Investors brace for market fluctuations as economic indicators send mixed signals.",Fabiano Cardosos,10,03,2024,Entretenimento,assets/stocks.jpg
+n3,sim,"Breakthrough in Renewable Energy Technology","Scientists announce a major advancement in solar cell efficiency.",João Silva,12,03,2024,Tecnologia,assets/solar.jpg
+n4,nao,"International Film Festival Highlights Independent Cinema","The annual film festival showcases a diverse range of films from emerging filmmakers.",Maria Costa,11,03,2024,Entretenimento,assets/film.jpg
+n5,sim,"Advancements in AI Technology","AI continues to evolve, offering new possibilities for businesses and individuals alike.",Carlos Santos,13,03,2024,Tecnologia,assets/ai.jpg
+n6,nao,"Global Climate Change: A Growing Concern","Climate change continues to pose a significant threat to our planet.",Isabel Soares,14,03,2024,Politica,assets/climate.jpg
+n7,sim,"Exploring the Depths of the Ocean","New underwater exploration technologies reveal the mysteries of the deep sea.",Luís Ferreira,15,03,2024,Tecnologia,assets/ocean.jpg
+n8,nao,"The Impact of Social Media on Society","A look at how social media platforms are influencing our daily lives.",Patrícia Almeida,16,03,2024,Entretenimento,assets/social.jpg
+n9,sim,"Space Travel: The Final Frontier","Space agencies and private companies aim to make space travel more accessible.",Joana Ribeiro,17,03,2024,Tecnologia,assets/space.jpg
+n10,nao,"The Role of Art in Society","Exploring the impact and importance of art in our daily lives.",António Gomes,18,03,2024,Entretenimento,assets/art.jpg

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE noticias [
+<!ELEMENT noticias (noticia*)>
+<!ELEMENT noticia (cabecalho, corpo)>
+<!ELEMENT cabecalho (titulo, subtitulo?, autor, data_publicacao, categoria*, imagem?)>
+<!ELEMENT corpo (paragrafo+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT data_publicacao (dia, mes, ano)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT imagem (#PCDATA)>
+<!ELEMENT paragrafo (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ATTLIST noticia
+    id ID #REQUIRED
+    destaque (sim|nao) "nao"
+    >
+<!ATTLIST categoria
+    tipo (politica|economia|desporto|entretenimento|tecnologia) #REQUIRED
+    >
+]>
+<noticias>
+    <noticia id="n1" destaque="sim">
+      <cabecalho>
+          <titulo>COVID-19 Cases Decline Globally, But Concerns Remain</titulo>
+          <subtitulo>New data suggests a decrease in COVID-19 cases worldwide, but experts warn of potential resurgence.</subtitulo>
+          <autor>Diogo Pinto</autor>
+          <data_publicacao>
+              <dia>05</dia>
+              <mes>03</mes>
+              <ano>2024</ano>
+          </data_publicacao>
+          <categoria tipo="desporto">Desporto</categoria>
+          <imagem>assets/corona.jpg</imagem>
+      </cabecalho>
+      <corpo>
+          <paragrafo>New statistics released by health organizations indicate a promising trend in the fight against COVID-19. With widespread vaccination efforts and adherence to safety measures, many regions are experiencing a decline in reported cases.</paragrafo>
+          <paragrafo>However, experts caution against complacency, citing the emergence of new variants and the potential for relaxed restrictions to lead to a resurgence in infections.</paragrafo>
+      </corpo>
+    </noticia>
+    <noticia id="n2" destaque="nao">
+      <cabecalho>
+          <titulo>Stock Market Shows Signs of Volatility Amid Economic Uncertainty</titulo>
+          <subtitulo>Investors brace for market fluctuations as economic indicators send mixed signals.</subtitulo>
+          <autor>Fabiano Cardosos</autor>
+          <data_publicacao>
+              <dia>10</dia>
+              <mes>03</mes>
+              <ano>2024</ano>
+          </data_publicacao>
+          <categoria tipo="entretenimento">Entretenimento</categoria>
+          <imagem>assets/stocks.jpg</imagem>
+      </cabecalho>
+      <corpo>
+          <paragrafo>The stock market experienced turbulence this week as conflicting reports on inflation and job growth fueled uncertainty among investors.</paragrafo>
+          <paragrafo>Analysts attribute the market's volatility to concerns over rising commodity prices, geopolitical tensions, and the Federal Reserve's monetary policy decisions.</paragrafo>
+      </corpo>
+    </noticia>
+    <noticia id="n3" destaque="sim">
+    <cabecalho>
+        <titulo>Breakthrough in Renewable Energy Technology</titulo>
+        <subtitulo>Scientists announce a major advancement in solar cell efficiency.</subtitulo>
+        <autor>João Silva</autor>
+        <data_publicacao>
+            <dia>12</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="tecnologia">Tecnologia</categoria>
+        <imagem>assets/solar.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>A team of international scientists has announced a breakthrough in photovoltaic technology that significantly improves the efficiency of solar cells.</paragrafo>
+        <paragrafo>The new design could lead to cheaper and more efficient solar panels, making renewable energy more accessible to a larger number of people.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n4" destaque="nao">
+    <cabecalho>
+        <titulo>International Film Festival Highlights Independent Cinema</titulo>
+        <subtitulo>The annual film festival showcases a diverse range of films from emerging filmmakers.</subtitulo>
+        <autor>Maria Costa</autor>
+        <data_publicacao>
+            <dia>11</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="entretenimento">Entretenimento</categoria>
+        <imagem>assets/film.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>The International Film Festival kicked off this week, highlighting the work of independent filmmakers from around the world.</paragrafo>
+        <paragrafo>The festival is known for its diverse selection of films, providing a platform for emerging talent in the film industry.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n5" destaque="sim">
+    <cabecalho>
+        <titulo>Advancements in AI Technology</titulo>
+        <subtitulo>AI continues to evolve, offering new possibilities for businesses and individuals alike.</subtitulo>
+        <autor>Carlos Santos</autor>
+        <data_publicacao>
+            <dia>13</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="tecnologia">Tecnologia</categoria>
+        <imagem>assets/ai.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>Artificial Intelligence (AI) is rapidly advancing, with new developments and applications emerging regularly. From healthcare to finance, AI is transforming the way we live and work.</paragrafo>
+        <paragrafo>As AI continues to evolve, it offers new possibilities for businesses and individuals alike, promising to revolutionize various sectors.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n6" destaque="nao">
+    <cabecalho>
+        <titulo>Global Climate Change: A Growing Concern</titulo>
+        <subtitulo>Climate change continues to pose a significant threat to our planet.</subtitulo>
+        <autor>Isabel Soares</autor>
+        <data_publicacao>
+            <dia>14</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="politica">Politica</categoria>
+        <imagem>assets/climate.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>Climate change remains a pressing issue worldwide, with rising temperatures and extreme weather events becoming increasingly common.</paragrafo>
+        <paragrafo>Efforts to combat climate change are ongoing, but there is a growing consensus that more needs to be done to protect our planet.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n7" destaque="sim">
+    <cabecalho>
+        <titulo>Exploring the Depths of the Ocean</titulo>
+        <subtitulo>New underwater exploration technologies reveal the mysteries of the deep sea.</subtitulo>
+        <autor>Luís Ferreira</autor>
+        <data_publicacao>
+            <dia>15</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="tecnologia">Tecnologia</categoria>
+        <imagem>assets/ocean.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>With advancements in technology, scientists are able to explore the depths of the ocean like never before. These explorations have led to the discovery of new species and ecosystems.</paragrafo>
+        <paragrafo>These discoveries highlight the vastness of our planet's oceans and the importance of their conservation.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n8" destaque="nao">
+    <cabecalho>
+        <titulo>The Impact of Social Media on Society</titulo>
+        <subtitulo>A look at how social media platforms are influencing our daily lives.</subtitulo>
+        <autor>Patrícia Almeida</autor>
+        <data_publicacao>
+            <dia>16</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="entretenimento">Entretenimento</categoria>
+        <imagem>assets/social.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>Social media platforms have become an integral part of our daily lives, influencing the way we communicate, consume news, and even shop.</paragrafo>
+        <paragrafo>While these platforms offer many benefits, they also present challenges, including issues related to privacy and misinformation.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n9" destaque="sim">
+    <cabecalho>
+        <titulo>Space Travel: The Final Frontier</titulo>
+        <subtitulo>Space agencies and private companies aim to make space travel more accessible.</subtitulo>
+        <autor>Joana Ribeiro</autor>
+        <data_publicacao>
+            <dia>17</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="tecnologia">Tecnologia</categoria>
+        <imagem>assets/space.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>Space travel has long been a topic of fascination and exploration. With advancements in technology and increased interest from private companies, the dream of space travel is becoming more attainable.</paragrafo>
+        <paragrafo>As we continue to explore the final frontier, the possibilities for discovery and innovation are endless.</paragrafo>
+    </corpo>
+    </noticia>
+    <noticia id="n10" destaque="nao">
+    <cabecalho>
+        <titulo>The Role of Art in Society</titulo>
+        <subtitulo>Exploring the impact and importance of art in our daily lives.</subtitulo>
+        <autor>António Gomes</autor>
+        <data_publicacao>
+            <dia>18</dia>
+            <mes>03</mes>
+            <ano>2024</ano>
+        </data_publicacao>
+        <categoria tipo="entretenimento">Entretenimento</categoria>
+        <imagem>assets/art.jpg</imagem>
+    </cabecalho>
+    <corpo>
+        <paragrafo>Art plays a crucial role in society, serving as a means of expression and communication. It can inspire, provoke thought, and even bring about social change.</paragrafo>
+        <paragrafo>Whether it's through painting, music, film, or literature, art enriches our lives and helps us to understand the world around us.</paragrafo>
+    </corpo>
+    </noticia>
+</noticias>

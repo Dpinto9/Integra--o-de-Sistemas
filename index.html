@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notícias Velhas</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.png">
+
+    <!---css style-->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" width="120px" />
+
+      <div class="inputSearch desktop">
+        <form id="searchForm">
+          <input type="text" placeholder="Pesquise aqui..." id="searchInput" onkeyup="searchNews()" />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>
+        <button id="toggleButton">Categorias<i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      <div>
+        <button onclick="location.href = 'addNews.html';" id="addNews">Adicionar Notícia</button>
+      </div>
+    
+
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!------>
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li onclick="filterByCategory('politica')" data-category="politica">Politica</li>
+            <li onclick="filterByCategory('economia')" data-category="economia">Economia</li>
+            <li onclick="filterByCategory('desporto')" data-category="desporto">Desporto</li>
+            <li onclick="filterByCategory('entretenimento')" data-category="entretenimento">Entretenimento</li>
+            <li onclick="filterByCategory('tecnologia')" data-category="tecnologia">Tecnologia</li>
+            <li onclick="filterByCategory('todos')" data-category="todos" id="todos">Todos</li>
+          </ul>          
+        </nav>
+        <div class="inputSearch">
+        <form id="searchFormMobile">
+          <input type="text" placeholder="Pesquise aqui..." />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </div>
+        </form>
+      </div>
+    </header>
+
+    <nav class="desktop" id="navMenu" style="display: none;">
+      <ul>
+        <li onclick="filterByCategory('politica')" data-category="politica">Politica</li>
+        <li onclick="filterByCategory('economia')" data-category="economia">Economia</li>
+        <li onclick="filterByCategory('desporto')" data-category="desporto">Desporto</li>
+        <li onclick="filterByCategory('entretenimento')" data-category="entretenimento">Entretenimento</li>
+        <li onclick="filterByCategory('tecnologia')" data-category="tecnologia">Tecnologia</li>
+        <li onclick="filterByCategory('todos')" data-category="todos" id="todos">Todos</li>
+      </ul>      
+    </nav>
+
+    <!-- main  -->
+
+    <main></main>
+
+    <script src="SCRIPT/script.js"></script>
+    <script src="SCRIPT/fetcher.js"></script>
+  </body>
+</html>
