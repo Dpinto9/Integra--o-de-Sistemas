@@ -28,23 +28,34 @@ document.getElementById('toggleButton').addEventListener('click', function() {
 
 
 
-  function searchNews() {
-    var input, filter, cards, card, title, category, i;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    cards = document.getElementsByClassName('card');
+function searchNews() {
+  var input, filter, cards, card, title, category, i;
+  input = document.getElementById('searchInput');
+  filter = input.value.toUpperCase();
+  cards = document.getElementsByClassName('card');
+  var slider = document.querySelector('.slider'); 
 
-    for (i = 0; i < cards.length; i++) {
-      card = cards[i];
-      title = card.getElementsByTagName('h4')[0];
-      category = card.getElementsByTagName('p')[1];
-      if (title.textContent.toUpperCase().indexOf(filter) > -1 || category.textContent.toUpperCase().indexOf(filter) > -1) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
+  // Verifica se o campo de pesquisa está vazio
+  if (filter === '') {
+      // Mostra o slider novamente
+      slider.style.display = '';
+  } else {
+      // Esconde o slider
+      slider.style.display = 'none';
+  }
+
+  for (i = 0; i < cards.length; i++) {
+    card = cards[i];
+    title = card.getElementsByTagName('h4')[0];
+    category = card.getElementsByTagName('p')[1];
+    if (title.textContent.toUpperCase().indexOf(filter) > -1 || category.textContent.toUpperCase().indexOf(filter) > -1) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
     }
   }
+}
+
 
   function filterByCategory(category) {
     var cards, card, categoryElement, i;
@@ -55,6 +66,17 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     menuItems.forEach(function(item) {
       item.classList.remove('active');
     });
+  
+    var slider = document.querySelector('.slider'); 
+
+    // Verifica se a categoria é "todos"
+    if (category === 'todos') {
+        // Mostra o slider novamente
+        slider.style.display = '';
+    } else {
+        // Esconde o slider
+        slider.style.display = 'none';
+    }
   
     for (i = 0; i < cards.length; i++) {
       card = cards[i];
@@ -71,7 +93,8 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     if (clickedMenuItem) {
       clickedMenuItem.classList.add('active');
     }
-  }
+}
+
 
 
 

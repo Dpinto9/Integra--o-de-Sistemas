@@ -59,7 +59,7 @@
           <paragrafo>Analysts attribute the market's volatility to concerns over rising commodity prices, geopolitical tensions, and the Federal Reserve's monetary policy decisions.</paragrafo>
       </corpo>
     </noticia>
-    <noticia id="n3" destaque="sim">
+    <noticia id="n3" destaque="nao">
     <cabecalho>
         <titulo>Breakthrough in Renewable Energy Technology</titulo>
         <subtitulo>Scientists announce a major advancement in solar cell efficiency.</subtitulo>
@@ -95,7 +95,7 @@
         <paragrafo>The festival is known for its diverse selection of films, providing a platform for emerging talent in the film industry.</paragrafo>
     </corpo>
     </noticia>
-    <noticia id="n5" destaque="sim">
+    <noticia id="n5" destaque="nao">
     <cabecalho>
         <titulo>Advancements in AI Technology</titulo>
         <subtitulo>AI continues to evolve, offering new possibilities for businesses and individuals alike.</subtitulo>
